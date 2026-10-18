@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tzu-Chieh Tai | Robotics M.S. at University of Michigan</title>
+  <meta name="description" content="Tzu-Chieh (Ken) Tai — Robotics M.S. student at the University of Michigan working on SLAM, 3D reconstruction, and robot perception.">
+  <meta property="og:title" content="Tzu-Chieh Tai">
+  <meta property="og:description" content="Robotics M.S. student at the University of Michigan">
+  <meta property="og:image" content="assets/img/profile.jpg">
+  <link rel="icon" href="assets/img/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="assets/img/profile.jpg" alt="Tzu-Chieh Tai" class="round_img">
+      <h1 class="name">Tzu-Chieh Tai</h1>
+      <p class="tagline">Robotics M.S. Student<br>University of Michigan</p>
+
+      <nav class="jump_links">
+        <a href="#about" class="button">About</a>
+        <a href="#experience" class="button">Experience</a>
+        <a href="#project" class="button">Selected Projects</a>
+        <a href="#education" class="button">Education</a>
+        <a href="docs/CV.pdf" class="button" target="_blank">CV</a>
+      </nav>
+
+      <div class="icon-links">
+        <a href="https://github.com/tzuchieh-robotics" target="_blank" aria-label="GitHub"><i class="fa-brands fa-square-github fa-2x fa-fw"></i></a>
+        <a href="https://www.linkedin.com/in/tzu-chieh-tai-209393363/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x fa-fw"></i></a>
+        <a href="mailto:tzuchieh@umich.edu" aria-label="Email"><i class="fa-solid fa-square-envelope fa-2x fa-fw"></i></a>
+      </div>
+    </header>
+
+    <section>
+
+      <h1 id="about">About</h1>
+      <p class="lead">
+        I am a Robotics M.S. student at the <a href="https://robotics.umich.edu/" target="_blank">University of Michigan</a> (GPA 4.0/4.0),
+        working on robot perception, SLAM, and 3D reconstruction.
+        Most recently, I was an Autonomous Systems Engineer Intern at <b>Tiami Networks</b>, where I built vision-based
+        obstacle avoidance and target tracking for drones.
+      </p>
+      <p class="lead">
+        At Michigan, I have worked as a research assistant in the <b>MAVRIC Lab</b> on semantic segmentation and LiDAR sensor fusion in Unreal Engine,
+        and in the <b>FROG Lab</b> on neural-field reconstruction of underwater scenes. I also built an end-to-end ARKit LiDAR indoor
+        reconstruction pipeline as a Computer Vision &amp; LiDAR intern at <b>Philo Homes</b>.
+      </p>
+      <p class="lead">
+        Before that, I received my B.S. from <a href="https://www.nthu.edu.tw/" target="_blank">National Tsing Hua University</a>
+        in the Interdisciplinary Program of Engineering (Mechanical &amp; Electrical Engineering), ranked 3/36.
+        I worked on rescue robots with autonomous exploration in Prof. Hsi-Pin Ma's Reliable Computing Lab,
+        and on reinforcement-learning trajectory optimization for robotic arms at <b>Gyro Systems</b>.
+      </p>
+      <p class="lead">
+        I am broadly interested in <b>robust robot perception</b>, from state estimation and mapping to learning-based scene understanding,
+        with the goal of making robots more intuitive and adaptive in the real world.
+      </p>
+
+      <h1 id="news">News</h1>
+      <ul class="news">
+        <li><span class="date">Jun 2026</span> <span>Joined <b>Tiami Networks</b> as an Autonomous Systems Engineer Intern.</span></li>
+        <li><span class="date">Mar 2026</span> <span>Joined <b>Philo Homes</b> as a Computer Vision &amp; LiDAR Research Intern, and the <b>FROG Lab</b> as a Research Assistant.</span></li>
+        <li><span class="date">Oct 2025</span> <span>Joined the <b>MAVRIC Lab</b> at the University of Michigan as a Research Assistant.</span></li>
+        <li><span class="date">Sep 2025</span> <span>Started my M.S. in Robotics at the University of Michigan.</span></li>
+      </ul>
+
+      <h1 id="experience">Experience</h1>
+      <table class="experience">
+        <tbody>
+          <tr>
+            <td class="logo"><img src="assets/img/tiami_logo.png" alt="Tiami Networks" class="logo-img"></td>
+            <td>
+              <b class="title">Autonomous Systems Engineer Intern</b>
+              <div class="meta">Tiami Networks, Sacramento, CA &middot; Jun. 2026 – Oct. 2026</div>
+              <ul>
+                <li>Designed obstacle avoidance and person-tracking motion planning on a Skydio 2 drone using a single low-resolution RGB camera, achieving a <b>90%</b> success rate in a 20 m × 40 m forest at 15 FPS with TensorRT.</li>
+                <li>Calibrated the Depth Anything V2 metric outdoor model for a reactive planner integrated with OSNet person Re-ID, with <b>zero collisions</b> and <b>zero tracking loss</b> across all test flights.</li>
+                <li>Developed vehicle tracking in urban environments with zero tracking loss at up to 12 km/h over a 1,500 m² area.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="assets/img/philo_logo.png" alt="Philo Homes" class="logo-img rounded"></td>
+            <td>
+              <b class="title">Computer Vision &amp; LiDAR Research Intern</b>
+              <div class="meta">Philo Homes, Ann Arbor, MI &middot; Mar. 2026 – Jun. 2026</div>
+              <ul>
+                <li>Improved reconstruction quality by <b>30%</b> with a hole-detection algorithm built from scratch, driving real-time iOS user guidance.</li>
+                <li>Cut offline depth rendering time by <b>90%</b> (5 min → 30 s) using Nvdiffrast and vectorization; benchmarked unprojection, TSDF, and ray tracing.</li>
+                <li>Engineered a full-stack 3D indoor reconstruction pipeline: ARKit LiDAR capture → COLMAP / OpenMVS on AWS (ECS, Step Functions, Lambda, FastAPI).</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="assets/img/umich_logo.png" alt="University of Michigan" class="logo-img rounded"></td>
+            <td>
+              <b class="title">Research Assistant</b>
+              <div class="meta">FROG Lab, University of Michigan &middot; Mar. 2026 – May 2026</div>
+              <ul>
+                <li>Accelerated training by <b>2.2×</b> via hard sampling and vectorized sampling on a 10k+ underwater dataset without loss of accuracy.</li>
+                <li>Developed and optimized SIREN (NeRF-based) models for high-fidelity underwater scene reconstruction.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="assets/img/umich_logo.png" alt="University of Michigan" class="logo-img rounded"></td>
+            <td>
+              <b class="title">Research Assistant</b>
+              <div class="meta">MAVRIC Lab, University of Michigan &middot; Oct. 2025 – Jun. 2026</div>
+              <ul>
+                <li>Achieved <b>90%</b> accuracy with a transformer-based semantic segmentation model.</li>
+                <li>Built a sensor-fusion pipeline combining semantics with LiDAR range on a UGV, plus a data collection and LiDAR simulation pipeline in Unreal Engine.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="assets/img/gyro_logo.png" alt="Gyro Systems" class="logo-img wide"></td>
+            <td>
+              <b class="title">Robotic Arm Software Intern</b>
+              <div class="meta">Gyro Systems Inc., Hsinchu, Taiwan &middot; Oct. 2023 – Oct. 2024</div>
+              <ul>
+                <li>Implemented TD3 reinforcement learning with a PyBullet digital twin to optimize robotic-arm trajectories on an AMR.</li>
+                <li>Led integration of a collaborative arm with MoveIt! via ROS and built a C++ digital twin for scenario testing.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="assets/img/nthu_logo.png" alt="National Tsing Hua University" class="logo-img"></td>
+            <td>
+              <b class="title">Undergraduate Researcher</b>
+              <div class="meta">Reliable Computing Lab (Prof. Hsi-Pin Ma), National Tsing Hua University &middot; Aug. 2022 – Jun. 2023</div>
+              <ul>
+                <li>Achieved over <b>90%</b> autonomous exploration coverage in unknown environments with sensor fusion and real-time navigation.</li>
+                <li>Developed a distributed ROS processing framework for real-time casualty detection in disaster areas.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1 id="project">Selected Projects</h1>
+      <h2 id="perception" class="subhead">Perception &amp; Reconstruction</h2>
+      <table class="projects">
+        <tbody>
+
+          <!-- Philo Homes reconstruction -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/philo_mesh.jpg" alt="Top-down view of a reconstructed multi-room apartment mesh" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Indoor 3D Reconstruction with LiDAR and ARKit VIO</p>
+              <p class="proj_meta">Philo Homes &middot; Mar. 2026 – Jun. 2026</p>
+              <p>
+                Engineered an end-to-end indoor reconstruction pipeline, from ARKit LiDAR capture on iOS to cloud processing with
+                COLMAP and OpenMVS on AWS (ECS, Step Functions, Lambda, FastAPI). Developed a hole-detection algorithm from scratch that
+                guides users in real time to rescan missing regions, improving reconstruction quality by <b>30%</b>.
+                Reduced offline depth rendering time by <b>90%</b> (5 min → 30 s) with Nvdiffrast and vectorization.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- FROG underwater reconstruction -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/frog_heightmap.jpg" alt="Ground-truth, estimated, and absolute-error heightmaps of underwater terrain" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Neural Implicit Reconstruction for Underwater Terrain using Sidescan Sonar Imagery</p>
+              <p class="proj_meta">FROG Lab, University of Michigan &middot; Mar. 2026 – May 2026</p>
+              <p>
+                Developed and optimized SIREN (NeRF-based) models for high-fidelity underwater terrain reconstruction from sidescan sonar.
+                Accelerated training by <b>2.2×</b> by implementing hard sampling and vectorizing the sampling process on a 10k+ underwater dataset,
+                without loss of reconstruction accuracy.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- NeRF-SLAM -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/nerfslam_traj.jpg" alt="Semantic map with estimated and ground-truth trajectories" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Uncertainty-Aware NeRF-SLAM</p>
+              <p class="proj_meta">Jan. 2026 – Apr. 2026</p>
+              <p>
+                [<a href="https://stunning-syrniki-05e831.netlify.app/" target="_blank">Project Page</a>]
+                [<a href="https://github.com/tzuchieh-robotics/Uncertainty-Aware-NeRF-SLAM" target="_blank">Code</a>]
+                <br>
+                Integrated entropy-based, multi-modal uncertainty (geometry, depth, semantics) weighted by covisibility for keyframe selection.
+                Reduced ATE mean by <b>28%</b> and ATE RMSE by <b>38%</b> on Replica, and cut the runtime overhead from 48% to 23%
+                with fully vectorized batch uncertainty computation.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- MAVRIC segmentation -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/mavric_seg.gif" alt="Unreal Engine off-road scenes alternating with their semantic labels" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Autonomous Semantics Data Generation Pipeline</p>
+              <p class="proj_meta">MAVRIC Lab, University of Michigan &middot; Oct. 2025 – Jun. 2026</p>
+              <p>
+                Built a data collection pipeline in Unreal Engine 5 to generate paired RGB images and semantic masks of off-road terrain,
+                and cleaned the labels into 7 classes (water, sky, ground, trees, bush, boulders, tall grass).
+                Trained a transformer-based FuseForm (MiT backbone) segmentation model with inverse-frequency class weighting and
+                confidence-thresholded predictions, achieving <b>90%</b> accuracy, as the semantic input for LiDAR sensor fusion on a UGV.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- Armlab -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/armlab.gif" alt="Robotic arm stacking blocks in order" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">RGB-D Camera Perception Pipeline for 6-Axis Robotic Arm</p>
+              <p class="proj_meta">ROB 550 &middot; Aug. 2025 – Oct. 2025</p>
+              <p>
+                [<a href="https://www.youtube.com/watch?v=yArg3g1mKAM" target="_blank">Video</a>]
+                [<a href="docs/ROB550_Armlab_Report.pdf" target="_blank">Report</a>]
+                <br>
+                Led integration of kinematics, camera calibration, and coordinate transformations in Python and ROS2.
+                Fixed a computation stall in depth-image projection to enable real-time contour detection, achieving
+                consistent five-layer block stacking with <b>under 10 mm</b> error.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- Attention UNet -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/attention_unet.gif" alt="Attention U-Net segmentation on Cityscapes" class="zoom fit" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Attention UNet</p>
+              <p class="proj_meta">Deep Learning for Robotics</p>
+              <p>
+                Trained an attention-gated U-Net with a four-level encoder on Cityscapes,
+                reaching <b>93.67%</b> pixel-wise accuracy after 71 epochs.
+              </p>
+            </div>
+          </td></tr>
+
+        </tbody>
+      </table>
+
+      <h2 id="planning" class="subhead">Robot Planning &amp; Control</h2>
+      <table class="projects">
+        <tbody>
+
+          <!-- Tiami drone tracking -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/tiami_tracking.jpg" alt="Drone view tracking vehicles with metric depth map overlay" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Autonomous Person and Vehicle Tracking for Drone System</p>
+              <p class="proj_meta">Tiami Networks &middot; Jun. 2026 – Oct. 2026</p>
+              <p>
+                Built person and vehicle tracking with reactive obstacle avoidance on a Skydio 2 drone using a single low-resolution RGB camera.
+                Calibrated Depth Anything V2 for metric outdoor depth and combined it with OSNet Re-ID, running at 15 FPS with TensorRT.
+                Achieved zero tracking loss for vehicles at up to 12 km/h over a 1,500 m² urban area, and a <b>90%</b> success rate in a forest.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- MBot -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/mbot.gif" alt="MBot autonomously exploring a maze" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Autonomous Mobile Robot Exploration with LiDAR using MBot</p>
+              <p class="proj_meta">ROB 550 &middot; Oct. 2025 – Dec. 2025</p>
+              <p>
+                [<a href="https://www.youtube.com/shorts/_0IkB5pFTMM" target="_blank">Video</a>]
+                [<a href="docs/ROB550_BotLab_Report.pdf" target="_blank">Report</a>]
+                [<a href="assets/img/mbot_localization.png" target="_blank">Map</a>]
+                [<a href="assets/img/mbot_scissor_lift.png" target="_blank">CAD</a>]
+                <br>
+                Full autonomy stack on a differential-drive robot: occupancy-grid mapping, Monte Carlo localization, A* planning, and frontier exploration.
+                Reduced mapping error by <b>50%</b> (10 cm → &lt;5 cm) with a thread-safe C++ scan buffer in ROS2, and designed a scissor lift
+                with a 2.8× extension ratio for stacking crates.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- Rescue robot -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/rescue_robot.gif" alt="Rescue robot mapping an unknown environment, RViz and real-world views" class="zoom fit" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Rescue Robot with Autonomous Mapping and Object Detection</p>
+              <p class="proj_meta">NTHU Reliable Computing Lab &middot; 2022 – 2023</p>
+              <p>
+                [<a href="https://www.youtube.com/watch?v=stnFmaoAbVs" target="_blank">Video</a>]
+                <br>
+                Built an autonomous ground vehicle with LiDAR, depth camera, and odometry that explores unknown disaster areas and marks casualties.
+                Fused 2D/3D sensing and offloaded computation over ROS, reaching over <b>90%</b> exploration coverage in real-world tests.
+                Won <b>3rd place</b> and an honorable mention at the department project competition.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- RL arm -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/rl_arm.gif" alt="TD3-trained 6-DoF arm reaching target poses in PyBullet" class="zoom" loading="lazy">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Application of Reinforcement Learning in Step Convergence for 6-DoF Robotic Arm Movement Path</p>
+              <p class="proj_meta">Gyro Systems &middot; 2023 – 2024</p>
+              <p>
+                [<a href="https://www.youtube.com/watch?v=ahpbagthPyY" target="_blank">Video</a>]
+                [<a href="assets/img/td3_arch.png" target="_blank">Architecture</a>]
+                [<a href="docs/RL_Arm_Poster.pdf" target="_blank">Poster</a>]
+                [<a href="docs/Pose_Estimation_Review.pdf" target="_blank">Pose Estimation Review</a>]
+                <br>
+                Applied TD3 with designed observation and reward functions to guide a velocity-controlled arm to target poses for lifting FOUPs,
+                trained in a PyBullet digital twin to reduce steps compared with hand-tuned industrial paths.
+              </p>
+            </div>
+          </td></tr>
+
+          <!-- Water -->
+          <tr><td>
+            <div class="project_cell media">
+              <img src="assets/img/water_sim.png" alt="Fluid simulation of water in a moving glass" class="zoom fit">
+            </div>
+            <div class="project_cell">
+              <p class="proj_title">Trajectory Optimization of a Glass of Water</p>
+              <p class="proj_meta">Undergraduate Research &middot; NTHU</p>
+              <p>
+                [<a href="assets/img/water_traj.png" target="_blank">Trajectory</a>]
+                <br>
+                Optimized polynomial trajectories under acceleration limits using geometric analysis, and simulated the fluid dynamics during motion,
+                showing that cubic polynomials yield smoother motion. Represented the College of Engineering in the internal selection for the Chun-Tsung Annual Conference.
+              </p>
+            </div>
+          </td></tr>
+
+        </tbody>
+      </table>
+
+
+      <h1 id="education">Education</h1>
+      <table class="experience">
+        <tbody>
+          <tr>
+            <td class="logo"><img src="assets/img/umich_logo.png" alt="University of Michigan" class="logo-img rounded"></td>
+            <td>
+              <b class="title">University of Michigan</b>
+              <div class="meta">M.S. in Robotics &middot; Sept. 2025 – Jun. 2027 (expected) &middot; GPA 4.0/4.0</div>
+              <div class="courses">Deep Learning for Robotics, Mobile Robots, Self-Driving Cars</div>
+            </td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="assets/img/nthu_logo.png" alt="National Tsing Hua University" class="logo-img"></td>
+            <td>
+              <b class="title">National Tsing Hua University</b>
+              <div class="meta">B.S. in Interdisciplinary Program of Engineering (ME &amp; EE) &middot; Sept. 2020 – Jun. 2024 &middot; GPA 3.95/4.3 (Rank 3/36)</div>
+              <div class="courses">Linear Algebra, Control Systems, Machine Learning, Robot Navigation and Exploration</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1 id="skills">Skills</h1>
+      <dl class="skills">
+        <dt>Robotics</dt>
+        <dd>SLAM (Kalman filter, factor graph), particle-filter localization, VIO, 3D reconstruction (SfM, OpenMVS, 3DGS, NeRF), semantic segmentation, motion planning, sensor calibration, ROS / ROS2, PyBullet, Gazebo</dd>
+        <dt>Programming</dt>
+        <dd>C/C++ (GTSAM, Ceres, PCL, Eigen, OpenCV), Python (PyTorch, NumPy), COLMAP, Open3D, CMake, Docker, AWS, Linux</dd>
+        <dt>Hardware</dt>
+        <dd>LiDAR, cameras, IMU, Arduino, 8051, CAD (Inventor, AutoCAD), Unreal Engine</dd>
+      </dl>
+
+      <div id="image-modal" class="image-modal" hidden>
+        <img id="image-modal-img" alt="">
+      </div>
+
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Tzu-Chieh Tai</p>
+      <p>Dark mode: <a href="#" data-theme-set="dark">ON</a> / <a href="#" data-theme-set="light">OFF</a></p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
